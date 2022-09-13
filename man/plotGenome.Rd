@@ -4,11 +4,23 @@
 \alias{plotGenome}
 \title{plotGenome: plot replication profile.}
 \usage{
-plotGenome(ratioDFs, geom = "geom_point", ylims = c(1, 2),
-  plotting = TRUE, genome = NULL, region = FALSE, guide = NULL,
-  lines = NULL, circles = NULL, rectangles = NULL, pointers = NULL,
-  colourLines = "#00FF00", colourCircles = "#FFFFFF",
-  colourRectangles = "#FF0000", colourPointers = "#FF7F00")
+plotGenome(
+  ratioDFs,
+  geom = "geom_point",
+  ylims = c(1, 2),
+  plotting = TRUE,
+  genome = NULL,
+  region = FALSE,
+  guide = NULL,
+  lines = NULL,
+  circles = NULL,
+  rectangles = NULL,
+  pointers = NULL,
+  colourLines = "#00FF00",
+  colourCircles = "#FFFFFF",
+  colourRectangles = "#FF0000",
+  colourPointers = "#FF7F00"
+)
 }
 \arguments{
 \item{ratioDFs}{A ratio dataframe or combined ratios dataframe containing 'ratio' column (dataframe).}

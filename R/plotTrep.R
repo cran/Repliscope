@@ -6,6 +6,7 @@
 #' @param plotting Should the plot object be sent to the default device? (boolean, defaults to TRUE).
 #' @keywords Trep scatterplot genomics bioinformatics
 #' @import ggplot2
+#' @importFrom methods is
 #' @export
 #' @examples
 #' plotTrep(TrepDF,region="chrI")
@@ -60,7 +61,7 @@ plotTrep <- function(TrepDF,region=FALSE,plotting=TRUE) {
   theMin <- min(genome$chromStart)
   labels <- makeLabels(theMin,theMax,"b")
   ## Make a dataframe with the ticks for the chromosome lines
-  if (class(region)=="logical") {
+  if (is(region, "logical")) {
     label <- labels$ticks[2]-labels$ticks[1]
     ticks <- numeric()
     chrom <- character()

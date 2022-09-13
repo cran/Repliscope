@@ -29,6 +29,7 @@
 #' @keywords replication ggplot2 genomics bioinformatics
 #' @import ggplot2
 #' @importFrom grDevices col2rgb
+#' @importFrom methods is
 #' @export
 #' @examples
 #' plotGenome(sortSeq,geom="geom_ribbon",guide=guide,region="chrIX:250000-439885",
@@ -80,7 +81,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   #~ 	}
 
   ##  If region is supplied, create the wee genome dataframe
-  if (class(region)=="character") {
+  if (is(region, "character")) {
     genome <- makeGenome(ratioDFs,region=region)
     xAxisName <- attributes(genome)$axisName
     # region <- as.character(region)
@@ -116,7 +117,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   labels <- makeLabels(theMin,theMax,"b")
 
   ## Make a dataframe with the ticks for the chromosome lines
-  if (class(region)=="logical") {
+  if (is(region, "logical")) {
     label <- labels$ticks[2]-labels$ticks[1]
     ticks <- numeric()
     chrom <- character()
@@ -186,7 +187,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
     aes(x=theMin,xend=genome$chromEnd,y=(ylims[1]-((ylims[2]-ylims[1])/10)),yend=(ylims[1]-((ylims[2]-ylims[1])/10))),
     size=.8,color="gray20"
   )  ##  Chromosome length line
-  if (class(region)=="logical") {
+  if (is(region, "logical")) {
     plot <- plot + facet_grid(
       chrom ~ .,
       scales = "free",
@@ -275,7 +276,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
         ratioFactor <- currentRatio$ratioFactor[1]
         sampleName <- paste0(rep," (",nonRep,",",ratioFactor,")")
         sampleNames <- append(sampleNames,sampleName)
-        if (class(region)=="character") {
+        if (is(region, "character")) {
           currentRatio <- currentRatio[currentRatio$chrom==region[1] & currentRatio$chromStart>=as.numeric(region[2]) & currentRatio$chromEnd<=as.numeric(region[3]),]
         }
         if (xor(as.logical(guide$raw[i]),as.logical(guide$smooth[i]))) { ##  Either raw only or smooth only
@@ -345,7 +346,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
     sign.99<-firstRatio[temp,]
     ##  Plot significant p-values
     if (nrow(sign.999)!=0) {
-      if (class(region)=="character") {
+      if (is(region, "character")) {
         sign.999 <- sign.999[sign.999$chrom==region[1] & sign.999$chromStart>=as.numeric(region[2]) & sign.999$chromEnd<=as.numeric(region[3]),]
       }
       plot<-plot+geom_segment(aes(
@@ -364,7 +365,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
       color.fills<-c(color.fills,NA)
     }
     if (nrow(sign.99)!=0) {
-      if (class(region)=="character") {
+      if (is(region, "character")) {
         sign.99 <- sign.99[sign.99$chrom==region[1] & sign.99$chromStart>=as.numeric(region[2]) & sign.99$chromEnd<=as.numeric(region[3]),]
       }
       plot<-plot+geom_segment(aes(
@@ -387,7 +388,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   if (!is.null(lines)) {
     lines$chrom <- factor(lines$chrom,levels=levels(genome$chrom))
     linesName <- as.character(lines$name[1])
-    if (class(region)=="character") {
+    if (is(region, "character")) {
       lines <- lines[lines$chrom==region[1] & lines$chromStart>=as.numeric(region[2]) & lines$chromEnd<=as.numeric(region[3]),]
     }
     plot<-plot+geom_segment(aes(x=chromStart,xend=chromEnd,y=ylims[1],yend=ylims[2]),data=lines,color=colourLines)
@@ -403,7 +404,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   if (!is.null(circles)) {
     circles$chrom <- factor(circles$chrom,levels=levels(genome$chrom))
     circlesName <- as.character(circles$name[1])
-    if (class(region)=="character") {
+    if (is(region, "character")) {
       circles <- circles[circles$chrom==region[1] & circles$chromStart>=as.numeric(region[2]) & circles$chromEnd<=as.numeric(region[3]),]
     }
     plot <- plot+geom_point(aes(x=chromStart+(chromEnd-chromStart)/2,y=ylims[1]-((ylims[2]-ylims[1])/10),color=circlesName),
@@ -419,7 +420,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   if (!is.null(rectangles)) {  ##  If a dataframe supplied, plot the rectangles
     rectangles$chrom <- factor(rectangles$chrom,levels=levels(genome$chrom))
     rectanglesName <- levels(rectangles$name)[1]
-    if (class(region)=="character") {
+    if (is(region, "character")) {
       rectangles <- rectangles[rectangles$chrom==region[1] & rectangles$chromStart>=as.numeric(region[2]) & rectangles$chromEnd<=as.numeric(region[3]),]
     }
     plot <- plot+geom_rect(aes(
@@ -438,7 +439,7 @@ plotGenome <- function(ratioDFs,geom="geom_point",ylims=c(1,2),plotting=TRUE,
   if (!is.null(pointers)) {  ##  If a dataframe supplied, plot the pointers
     pointers$chrom <- factor(pointers$chrom,levels=levels(genome$chrom))
     pointersName <- levels(pointers$name)[1]
-    if (class(region)=="character") {
+    if (is(region, "character")) {
       pointers <- pointers[pointers$chrom==region[1] & pointers$chromStart>=as.numeric(region[2]) & pointers$chromEnd<=as.numeric(region[3]),]
     }
     plot <- plot+geom_point(aes(x=chromStart+(chromEnd-chromStart)/2,y=ylims[1],color=pointersName),

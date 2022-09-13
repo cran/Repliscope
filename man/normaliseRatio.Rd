@@ -10,8 +10,7 @@ either using supplied 'rFactor' value or automatically to best fit 1 to 2 scale
 Normalisation factor used is stored in 'ratioFactor' column and also passed as the
 dataframe comment. To extract it, use 'attributes(mergedBed)$comment'}
 \usage{
-normaliseRatio(ratioDF, rFactor = NULL, upperLimit = 2,
-  replace = TRUE)
+normaliseRatio(ratioDF, rFactor = NULL, upperLimit = 2, replace = TRUE)
 }
 \arguments{
 \item{ratioDF}{A ratio dataframe containing 'ratio' column (dataframe).}

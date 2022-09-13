@@ -1,8 +1,8 @@
 #' Sequence read coverage for wild type S.cerevisiae W303 replicating sample
 #'
-#' Sequence read coverage for wild type replicating sample 
+#' Sequence read coverage for wild type replicating sample
 #' (T7107 strain). The cells were stained with DNA dye and sorted
-#' based on DNA content into S phase fraction. Extracted DNA 
+#' based on DNA content into S phase fraction. Extracted DNA
 #' was sequenced and mapped to sacCer3 genome. Unique reads were
 #' calculated in 1 kb genomic bins.
 #'
@@ -22,9 +22,9 @@
 #' @keywords datasets sortSeq bed coverage
 #'
 #' @references Natsume et al. (2013) Mol Cell 50(5):661-74
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23746350}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/23746350}{PubMed})
 #'
-#' @source \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358[accn]}{SRA}
+#' @source \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358}{SRA}
 #'
 #' @examples
 #' data(W303_S)

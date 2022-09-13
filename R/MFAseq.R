@@ -30,10 +30,10 @@
 #' @keywords datasets sortSeq replication
 #'
 #' @references Hawkins et al. (2013) Nature 503(7477):544-547
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/24185008}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/24185008}{PubMed})
 #'
-#' @source DS2_exp exponential phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202169[accn]}{SRA};
-#' DS2_stat stationary sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202170[accn]}{SRA}
+#' @source DS2_exp exponential phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202169}{SRA};
+#' DS2_stat stationary sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202170}{SRA}
 #'
 #' @examples
 #' data(MFAseq)

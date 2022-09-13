@@ -1,9 +1,9 @@
 #' Sequence read coverage ratios for S.cerevisiae Dbf4-9myc sample.
 #'
-#' Sequence read coverage ratios for Dbf4-9myc sample 
+#' Sequence read coverage ratios for Dbf4-9myc sample
 #' (T9394 strain). The cells were stained with DNA dye and sorted
-#' based on DNA content into S or G2/M phase fractions. Extracted 
-#' DNA was sequenced and mapped to sacCer3 genome. Unique reads 
+#' based on DNA content into S or G2/M phase fractions. Extracted
+#' DNA was sequenced and mapped to sacCer3 genome. Unique reads
 #' for replicating (S) and non-replicating (G2/M) samples were
 #'  calculated in 1 kb genomic bins. The ratio was created by
 #' dividing 'score' values from replicating sample by non-
@@ -30,10 +30,10 @@
 #' @keywords datasets sortSeq bed coverage
 #'
 #' @references Natsume et al. (2013) Mol Cell 50(5):661-74
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23746350}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/23746350}{PubMed})
 #'
-#' @source S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202404[accn]}{SRA};
-#' G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202403[accn]}{SRA}
+#' @source S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202404}{SRA};
+#' G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202403}{SRA}
 #'
 #' @examples
 #' data(Dbf4myc)

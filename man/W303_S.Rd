@@ -4,24 +4,26 @@
 \name{W303_S}
 \alias{W303_S}
 \title{Sequence read coverage for wild type S.cerevisiae W303 replicating sample}
-\format{data frame with 11820 rows and 5 variables:
+\format{
+data frame with 11820 rows and 5 variables:
 \describe{
 	\item{chrom}{short chromosome name}
 	\item{chromStart}{left chromosome coordinate}
 	\item{chromEnd}{right chromosome coordinate}
 	\item{name}{sample name}
 	\item{score}{read number in current bin}
-}}
+}
+}
 \source{
-\href{https://www.ncbi.nlm.nih.gov/sra/SRX204358[accn]}{SRA}
+\href{https://www.ncbi.nlm.nih.gov/sra/SRX204358}{SRA}
 }
 \usage{
 data(W303_S)
 }
 \description{
-Sequence read coverage for wild type replicating sample 
+Sequence read coverage for wild type replicating sample
 (T7107 strain). The cells were stained with DNA dye and sorted
-based on DNA content into S phase fraction. Extracted DNA 
+based on DNA content into S phase fraction. Extracted DNA
 was sequenced and mapped to sacCer3 genome. Unique reads were
 calculated in 1 kb genomic bins.
 }
@@ -30,7 +32,7 @@ data(W303_S)
 }
 \references{
 Natsume et al. (2013) Mol Cell 50(5):661-74
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23746350}{PubMed})
+(\href{https://pubmed.ncbi.nlm.nih.gov/23746350}{PubMed})
 }
 \keyword{bed}
 \keyword{coverage}

@@ -1,7 +1,7 @@
 #' Replication profiles for wild type and Dbf4-9myc S.cerevisiae samples
 #'
-#' Replication profiles for wild type and Dbf4-9myc samples 
-#' (T7107 and T9394 strains). The cells were stained with DNA dye 
+#' Replication profiles for wild type and Dbf4-9myc samples
+#' (T7107 and T9394 strains). The cells were stained with DNA dye
 #' and sorted based on DNA content into S or G2/M phase fractions.
 #' Extracted DNA was sequenced and mapped to sacCer3 genome. Unique
 #' reads for replicating (S) and non-replicating (G2/M) samples were
@@ -9,7 +9,7 @@
 #' dividing 'score' values from replicating sample by non-
 #' replicating sample 'score' values, adjusted by total number
 #' of reads. The ratio values were further adjusted by multiplying
-#' them by 1.41 and 1.402 for wild type and Dbf4-9myc samples, 
+#' them by 1.41 and 1.402 for wild type and Dbf4-9myc samples,
 #' respectively, to put the values onto biologically relevant
 #' relative copy number scale from 1 to 2. The relative copy number
 #' values were smoothed using cubic spline and compared using z
@@ -36,12 +36,12 @@
 #' @keywords datasets sortSeq replication
 #'
 #' @references Natsume et al. (2013) Mol Cell 50(5):661-74
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23746350}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/23746350}{PubMed})
 #'
-#' @source Dbf4myc S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202404[accn]}{SRA};
-#' Dbf4myc G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202403[accn]}{SRA};
-#' W303 S sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358[accn]}{SRA};
-#' W303 G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204357[accn]}{SRA}
+#' @source Dbf4myc S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202404}{SRA};
+#' Dbf4myc G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202403}{SRA};
+#' W303 S sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358}{SRA};
+#' W303 G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204357}{SRA}
 #'
 #' @examples
 #' data(sortSeq)

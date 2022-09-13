@@ -21,7 +21,7 @@
 #' @keywords datasets syncSeq Trep
 #'
 #' @references Müller et al. (2014) NAR 42(1):e3
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/24089142}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/24089142}{PubMed})
 #'
 #' @examples
 #' data(TrepDF)

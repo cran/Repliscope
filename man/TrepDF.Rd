@@ -4,14 +4,16 @@
 \name{TrepDF}
 \alias{TrepDF}
 \title{Trep data calculated from syncSeq[["data"]]}
-\format{data frame with 11341 rows and 5 variables:
+\format{
+data frame with 11341 rows and 5 variables:
 \describe{
 	\item{chrom}{short chromosome name}
 	\item{chromStart}{left chromosome coordinate}
 	\item{chromEnd}{right chromosome coordinate}
 	\item{Trep}{calculated Trep value}
 	\item{TrepErr}{error from sigmoid function fitting}
-}}
+}
+}
 \usage{
 data(TrepDF)
 }
@@ -26,7 +28,7 @@ data(TrepDF)
 }
 \references{
 Müller et al. (2014) NAR 42(1):e3
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/24089142}{PubMed})
+(\href{https://pubmed.ncbi.nlm.nih.gov/24089142}{PubMed})
 }
 \keyword{Trep}
 \keyword{datasets}

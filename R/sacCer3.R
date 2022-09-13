@@ -1,6 +1,6 @@
-#' S.cerevisiae genome information  
+#' S.cerevisiae genome information
 #'
-#' sacCer3 meta information: chromosome sizes, 
+#' sacCer3 meta information: chromosome sizes,
 #' centromere and replication origin positions.
 #'
 #' @encoding UTF-8
@@ -20,7 +20,7 @@
 #' @keywords datasets sacCer3 replication
 #'
 #' @references Siow et al. (2011) NAR 40(Database issue):D682-6
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/22121216}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/22121216}{PubMed})
 #'
 #' @source Replication origin information: (\href{http://cerevisiae.oridb.org/}{OriDB})
 #'

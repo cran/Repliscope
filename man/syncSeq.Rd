@@ -5,7 +5,8 @@
 \name{syncSeq}
 \alias{syncSeq}
 \title{Replication profiles budding yeast arrest-release samples}
-\format{List containing two data frames
+\format{
+List containing two data frames
 \describe{
 	\item{data}{syncSeq replication profiles data. Columns:
 		\strong{chrom} (short chromosome name),
@@ -26,7 +27,8 @@
 		\strong{smooth} (Should smooth data be plotted?),
 		\strong{color} (Color to plot the profile in)
 	}
-}}
+}
+}
 \source{
 \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48212}{GEO}
 }
@@ -34,20 +36,20 @@
 data(syncSeq)
 }
 \description{
-Replication profiles of wild type S. cerevisiae arrest-release samples 
+Replication profiles of wild type S. cerevisiae arrest-release samples
 (AUY077 strain). The cells were arrested in G1 with alpha-factor
 followed by release using pronase. The samples were collected
 before the release (aFactor) and various time intervals after
 the release (25min,30min,35min,40min,45min,50min and 90min)
 Extracted DNA was sequenced and mapped to sacCer3 genome. Unique
 reads for replicating (post-release) and non-replicating (aFactor)
-samples were calculated in 1 kb genomic bins. The ratios were 
-created by dividing 'score' values from replicating samples by 
+samples were calculated in 1 kb genomic bins. The ratios were
+created by dividing 'score' values from replicating samples by
 non-replicating sample 'score' values, adjusted by total number
-of reads. The ratio values were further adjusted based on bulk 
-genome replication (as determined by flow cytometry), to put the 
-values onto biologically relevant relative copy number scale from 
-1 to 2. The relative copy number values were smoothed using cubic 
+of reads. The ratio values were further adjusted based on bulk
+genome replication (as determined by flow cytometry), to put the
+values onto biologically relevant relative copy number scale from
+1 to 2. The relative copy number values were smoothed using cubic
 spline.
 }
 \examples{
@@ -55,7 +57,7 @@ data(syncSeq)
 }
 \references{
 Müller et al. (2014) NAR 42(1):e3
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/24089142}{PubMed})
+(\href{https://pubmed.ncbi.nlm.nih.gov/24089142}{PubMed})
 }
 \keyword{datasets}
 \keyword{replication}

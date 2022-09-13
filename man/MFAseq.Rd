@@ -4,7 +4,8 @@
 \name{MFAseq}
 \alias{MFAseq}
 \title{Replication profile for wild type DS2 H.volcanii}
-\format{data frame with 3887 rows and 7 variables:
+\format{
+data frame with 3887 rows and 7 variables:
 \describe{
 	\item{chrom}{short chromosome name}
 	\item{chromStart}{left chromosome coordinate}
@@ -13,10 +14,11 @@
 	\item{name.nonRep}{non-replicating sample name}
 	\item{ratio}{ratio value in the current bin}
 	\item{ratioFactor}{adjustment factor used for the current ratio}
-}}
+}
+}
 \source{
-DS2_exp exponential phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202169[accn]}{SRA};
-DS2_stat stationary sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202170[accn]}{SRA}
+DS2_exp exponential phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202169}{SRA};
+DS2_stat stationary sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX202170}{SRA}
 }
 \usage{
 data(MFAseq)
@@ -39,7 +41,7 @@ data(MFAseq)
 }
 \references{
 Hawkins et al. (2013) Nature 503(7477):544-547
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/24185008}{PubMed})
+(\href{https://pubmed.ncbi.nlm.nih.gov/24185008}{PubMed})
 }
 \keyword{datasets}
 \keyword{replication}

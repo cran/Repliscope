@@ -5,7 +5,8 @@
 \name{guide}
 \alias{guide}
 \title{Guide dataframe for plotting smoothed sortSeq data}
-\format{Dataframe with 2 rows and 6 variables:
+\format{
+Dataframe with 2 rows and 6 variables:
 
 	\describe{
 		\item{order}{Order to plot data in}
@@ -14,7 +15,8 @@
 		\item{raw}{Should raw data be plotted?}
 		\item{smooth}{Should smooth data be plotted?}
 		\item{color}{Color to plot the profile in}
-	}}
+	}
+}
 \usage{
 data(guide)
 }

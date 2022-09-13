@@ -1,9 +1,9 @@
 #' Sequence read coverage ratios for wild type S.cerevisiae W303
 #'
-#' Sequence read coverage ratios for wild type sample 
+#' Sequence read coverage ratios for wild type sample
 #' (T7107 strain). The cells were stained with DNA dye and sorted
-#' based on DNA content into S or G2/M phase fractions. Extracted 
-#' DNA was sequenced and mapped to sacCer3 genome. Unique reads 
+#' based on DNA content into S or G2/M phase fractions. Extracted
+#' DNA was sequenced and mapped to sacCer3 genome. Unique reads
 #' for replicating (S) and non-replicating (G2/M) samples were
 #'  calculated in 1 kb genomic bins. The ratio was created by
 #' dividing 'score' values from replicating sample by non-
@@ -28,10 +28,10 @@
 #' @keywords datasets sortSeq bed coverage
 #'
 #' @references Natsume et al. (2013) Mol Cell 50(5):661-74
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23746350}{PubMed})
+#' (\href{https://pubmed.ncbi.nlm.nih.gov/23746350}{PubMed})
 #'
-#' @source S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358[accn]}{SRA};
-#' G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204357[accn]}{SRA}
+#' @source S phase sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204358}{SRA};
+#' G2 sample: \href{https://www.ncbi.nlm.nih.gov/sra/SRX204357}{SRA}
 #'
 #' @examples
 #' data(W303)

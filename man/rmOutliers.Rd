@@ -7,8 +7,7 @@ There are three methods: max, IQR and median. Max is used to remove 1 or more ma
 values; IQR uses interquartile range to detect outliers, while median method can be
 used to remove data based on genome-wide median.}
 \usage{
-rmOutliers(bed, method, n = 1, range = 3, loLim = 0.25,
-  hiLim = NULL)
+rmOutliers(bed, method, n = 1, range = 3, loLim = 0.25, hiLim = NULL)
 }
 \arguments{
 \item{bed}{A dataframe containing 'score' column (dataframe, required).}

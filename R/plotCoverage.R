@@ -6,6 +6,7 @@
 #' @param plotting Should the plot object be sent to the default device? (boolean, defaults to TRUE).
 #' @keywords scatterplot BED genomics bioinformatics
 #' @import ggplot2
+#' @importFrom methods is
 #' @export
 #' @examples
 #' plotCoverage(W303_G2)
@@ -61,7 +62,7 @@ plotCoverage <- function(bed,region=FALSE,plotting=TRUE) {
   labels <- makeLabels(theMin,theMax,"b")
   #~ 	minorTickFactor <- as.numeric(attributes(labels)$minorTickFactor)
   ## Make a dataframe with the ticks for the chromosome lines
-  if (class(region)=="logical") {
+  if (is(region, "logical")) {
     label <- labels$ticks[2]-labels$ticks[1]
     ticks <- numeric()
     chrom <- character()
